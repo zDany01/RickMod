@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 1,
+  "id": "fixfps",
+  "version": "${version}",
+
+  "name": "La mia mod per fixare gli fps",
+  "description": "Sono razzista",
+  "authors": [
+    "Hitler",
+    "Sicuramente non un nero",
+    "Mussolini",
+    "Gesù Cristo"
+  ],
+  "contact": {
+    "homepage": "",
+    "sources": ""
+  },
+
+  "license": "CC0-1.0",
+  "icon": "assets/fixfps/icon.png",
+
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "class.fixfps.MainClass"
+    ]
+  },
+
+  "depends": {
+    "fabricloader": ">=0.11.3",
+    "fabric": "*",
+    "minecraft": "1.17.x",
+    "java": ">=16"
+  },
+  "suggests": {
+    "another-mod": "*"
+  }
+}
