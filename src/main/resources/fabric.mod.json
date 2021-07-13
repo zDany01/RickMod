@@ -1,28 +1,27 @@
 {
   "schemaVersion": 1,
   "id": "fixfps",
-  "version": "${version}",
+  "version": "1.0",
 
   "name": "La mia mod per fixare gli fps",
-  "description": "Sono razzista",
+  "description": "for law reason, this is a joke.",
   "authors": [
     "Hitler",
-    "Sicuramente non un nero",
     "Mussolini",
     "Gesù Cristo"
   ],
   "contact": {
     "homepage": "",
-    "sources": ""
+    "sources": "https://github.com/zDany01/RickMod"
   },
 
-  "license": "CC0-1.0",
+  "license": "mit",
   "icon": "assets/fixfps/icon.png",
 
   "environment": "*",
   "entrypoints": {
     "main": [
-      "class.fixfps.MainClass"
+      "net.fixfps.MainClass"
     ]
   },
 
