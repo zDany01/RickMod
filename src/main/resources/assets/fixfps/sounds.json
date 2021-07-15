@@ -1,7 +1,31 @@
 {
     "rickaudio": {
-      "sounds": [
-        "fixfps:rickaudio"
-      ]
-    }
+      "sounds": ["fixfps:rickaudio"]},
+
+    "rick1":{
+      "sounds":["fixfps:rick1"]},
+
+    "rick2":{
+      "sounds":["fixfps:rick2"]},
+ 
+    "rick3":{
+      "sounds":["fixfps:rick3"]},
+
+    "rick4":{
+      "sounds":["fixfps:rick4"]},
+
+    "rick5":{
+      "sounds":["fixfps:rick5"]},
+
+    "rick6":{
+      "sounds":["fixfps:rick6"]},
+
+    "rick7":{
+     "sounds":["fixfps:rick7"]},
+
+    "rick8":{
+     "sounds":["fixfps:rick8"]},
+
+    "rick9":{
+     "sounds":["fixfps:rick9"]}
   }
