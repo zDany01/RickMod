@@ -1,0 +1,20 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "###",
+        "#C#",
+        "###"
+    ],
+    "key": {
+        "#": {
+            "item": "fixfps:stickroll"
+        },
+        "C": {
+            "item": "minecraft:charcoal"
+        }
+    },
+    "result": {
+        "item": "fixfps:mangiaroll",
+        "count": 8
+    }
+}
