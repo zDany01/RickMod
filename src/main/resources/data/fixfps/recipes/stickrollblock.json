@@ -1,16 +1,17 @@
 {
     "type": "minecraft:crafting_shaped",
     "pattern": [
-        "##",
-        "##"
+        "###",
+        "###",
+        "###"
     ],
     "key": {
         "#": {
-            "item": "fixfps:stickroll"
+            "item": "fixfps:mangiaroll"
         }
     },
     "result": {
-        "item": "fixfps:stickrollblock",
+        "item": "fixfps:rickrollblock",
         "count": 1
     }
 }
