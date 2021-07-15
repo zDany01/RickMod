@@ -1,0 +1,20 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "###",
+        "#D#",
+        "###"
+    ],
+    "key": {
+        "#": {
+            "item": "minecraft:torch"
+        },
+        "D": {
+            "item": "fixfps:stickroll"
+        }
+    },
+    "result": {
+        "item": "fixfps:ricktorch",
+        "count": 32
+    }
+}
