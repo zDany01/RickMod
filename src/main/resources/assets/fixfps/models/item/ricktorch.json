@@ -1,3 +1,7 @@
 {
-    "parent":"fixfps:block/ricktorch"
+    "parent":"minecraft:item/generated",
+    "textures":{
+        "layer0":"fixfps:block/ricktorch"
+    }
+
 }
