@@ -78,9 +78,6 @@ public class MainClass implements ModInitializer {
 		Registry.register(Registry.ITEM, new Identifier("fixfps","ricktorch"), RickTorch_ITEM);
 		RegistryKey<ConfiguredFeature<?,?>> StickRollOreGen = RegistryKey.of(Registry.CONFIGURED_FEATURE_KEY, new Identifier("fixfps","stickrollblock"));
 
-
-		//BlockRenderLayerMap.INSTANCE.putBlock(RickTorch, RenderLayer.getCutout());
-
 		Registry.register(BuiltinRegistries.CONFIGURED_FEATURE, StickRollOreGen.getValue(), StickRollBlock_Generator);
 		BiomeModifications.addFeature(BiomeSelectors.foundInOverworld(), GenerationStep.Feature.UNDERGROUND_ORES, StickRollOreGen);
 	}
