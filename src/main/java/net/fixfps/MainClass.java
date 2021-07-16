@@ -6,13 +6,11 @@ package net.fixfps;
 import net.fabricmc.api.ModInitializer;
 import net.fabricmc.fabric.api.biome.v1.BiomeModifications;
 import net.fabricmc.fabric.api.biome.v1.BiomeSelectors;
-import net.fabricmc.fabric.api.blockrenderlayer.v1.BlockRenderLayerMap;
 import net.minecraft.world.gen.decorator.RangeDecoratorConfig;
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
 import net.fabricmc.fabric.api.tool.attribute.v1.FabricToolTags;
 import net.minecraft.block.Block;
 import net.minecraft.block.Material;
-import net.minecraft.client.render.RenderLayer;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroup;
@@ -81,8 +79,7 @@ public class MainClass implements ModInitializer {
 		RegistryKey<ConfiguredFeature<?,?>> StickRollOreGen = RegistryKey.of(Registry.CONFIGURED_FEATURE_KEY, new Identifier("fixfps","stickrollblock"));
 
 
-		BlockRenderLayerMap.INSTANCE.putBlock(RickTorch, RenderLayer.getCutout());
-
+		//BlockRenderLayerMap.INSTANCE.putBlock(RickTorch, RenderLayer.getCutout());
 
 		Registry.register(BuiltinRegistries.CONFIGURED_FEATURE, StickRollOreGen.getValue(), StickRollBlock_Generator);
 		BiomeModifications.addFeature(BiomeSelectors.foundInOverworld(), GenerationStep.Feature.UNDERGROUND_ORES, StickRollOreGen);
