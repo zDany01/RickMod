@@ -41,6 +41,8 @@ public class MainClass implements ModInitializer {
 	public static SoundEvent RICK_AUDIO = new SoundEvent(new Identifier("fixfps","rickaudio")); //crea un nuovo envento che genera un suono che viene identificato con "fixfps:rickaudio"(Controlla il file json contiene la posizione)
 	public static final Block RickTorch = new RickTorch(FabricBlockSettings.of(Material.DECORATION).breakInstantly().breakByHand(true).luminance(20).noCollision().nonOpaque());
 	public static final Item RickTorch_ITEM = new BlockItem(RickTorch, new Item.Settings().group(RickCreativeTab));
+	public static final Item RespawnGesu = new RespawnGesu(new Item.Settings().group(RickCreativeTab));
+	
 	public static SoundEvent RICK1 = new SoundEvent(new Identifier("fixfps","rick1"));
     public static SoundEvent RICK2 = new SoundEvent(new Identifier("fixfps","rick2"));
     public static SoundEvent RICK3 = new SoundEvent(new Identifier("fixfps","rick3"));
@@ -76,6 +78,7 @@ public class MainClass implements ModInitializer {
 		Registry.register(Registry.SOUND_EVENT, new Identifier("fixfps","rick9"), RICK9);
 		Registry.register(Registry.BLOCK, new Identifier("fixfps","ricktorch"), RickTorch);
 		Registry.register(Registry.ITEM, new Identifier("fixfps","ricktorch"), RickTorch_ITEM);
+		Registry.register(Registry.ITEM, new Identifier("fixfps","respawngesu"), RespawnGesu);
 		RegistryKey<ConfiguredFeature<?,?>> StickRollOreGen = RegistryKey.of(Registry.CONFIGURED_FEATURE_KEY, new Identifier("fixfps","stickrollblock"));
 
 		Registry.register(BuiltinRegistries.CONFIGURED_FEATURE, StickRollOreGen.getValue(), StickRollBlock_Generator);
