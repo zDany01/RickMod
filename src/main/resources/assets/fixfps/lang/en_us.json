@@ -7,5 +7,6 @@
     "block.fixfps.stickrollblock" : "Rick stone ore",
     "block.fixfps.rickrollblock" : "Never Gonna Block You Up",
     "item.fixfps.ricktorch":"Never Gonna Give You Dark",
-    "block.fixfps.ricktorch":"Never Gonna Give You Dark"
+    "block.fixfps.ricktorch":"Never Gonna Give You Dark",
+    "item.fixfps.respawngesu": "Never Gonna Let You Die"
 }

@@ -1,0 +1,29 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "#D#",
+        "GNG",
+        "#W#"
+    ],
+    "key": {
+        "#": {
+            "item": "minecraft:totem_of_undying"
+        },
+        "D": {
+            "item": "minecraft:dragon_breath"
+        },
+        "G": {
+            "item": "minecraft:ghast_tear"
+        },
+        "N": {
+            "item": "minecraft:nether_star"
+        },
+        "W": {
+            "item": "minecraft:wither_rose"
+        }
+    },
+    "result": {
+        "item": "fixfps:respawngesu",
+        "count": 1
+    }
+}
