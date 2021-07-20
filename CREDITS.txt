@@ -1,0 +1,1 @@
+- The library LibGui(https://github.com/CottonMC/LibGui) is used in this mod, licensed under MIT
