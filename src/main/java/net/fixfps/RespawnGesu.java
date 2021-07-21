@@ -1,8 +1,8 @@
 package net.fixfps;
 
-import com.mojang.authlib.minecraft.client.MinecraftClient;
-
-import net.minecraft.entity.damage.DamageSource;
+import io.github.cottonmc.cotton.gui.client.CottonClientScreen;
+import net.fabricmc.api.EnvType;
+import net.fabricmc.api.Environment;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
@@ -15,9 +15,10 @@ public class RespawnGesu extends Item {
     public RespawnGesu(Settings settings){super(settings);}
 
     @Override
+    @Environment(EnvType.CLIENT)
     public TypedActionResult<ItemStack> use(World world,PlayerEntity user, Hand hand ){
-        user.damage(DamageSource.DRAGON_BREATH, 2);
-       return super.use(world, user, hand);
+        if (world.isClient()){net.minecraft.client.MinecraftClient.getInstance().setScreen(new CottonClientScreen(new JesusGUI(user)));}
+        return super.use(world, user, hand);
     }
     
     
